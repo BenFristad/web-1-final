@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Lora:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #b0dcec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  line-height: 3em;
+}
+
+.pageformat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* This is used to make the boxes dynamically change with the screen size */
+.page .box {
+  transition: box-shadow 0.3s;
+  flex: 1 1 40%;
+  box-sizing: border-box;
+  background-color: #f8fcfc;
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+  margin: 1.5em;
+}
+
+.box:hover {
+  box-shadow: 7px 7px 7px 7px rgba(168, 76, 236, 1);
+}
+
+h1 {
+  color: #0c1c70;
+  font-family: "Bitter", sans-serif;
+  text-align: center;
+  font-size: 36pt;
+  font-weight: 800;
+}
+
+h2 {
+  color: #0c1c70;
+  font-family: "Bitter", sans-serif;
+  text-align: center;
+  font-size: 36pt;
+  font-weight: 700;
+}
+
+h3 {
+  color: #0c1c70;
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  font-size: 24pt;
+  font-weight: 600;
+}
+
+p {
+  color: #0c1c70;
+  font-family: "Lora", sans-serif;
+  text-align: center;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+li {
+  color: #0c1c70;
+  font-family: "Lora", sans-serif;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #0c1c70;
+  font-family: "Lora", sans-serif;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #b0dcec;
+  padding: 2em;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aws_logo {
+  height: auto;
+  width: 200px;
+  padding: 3em;
+}
+
+.rti_logo {
+  height: auto;
+  width: 200px;
+}
+
+.afcs_logo {
+  height: auto;
+  width: 150px;
+}
+
+.computer_img {
+  padding-top: 5em;
+  height: auto;
+  width: 400px;
+}
+
+/* mobile sizing */
+@media (max-width: 30em) { 
+  h1 {
+    font-size: 18pt;  
+    }
+  
+  h2 {
+    font-size: 18pt;  
+    }
+  
+  h3 {
+    font-size: 14pt;  
+    }
+  
+  p {
+    font-size: 10pt;  
+    }
+  
+  li {
+    font-size: 10pt;  
+    }
+  
+  a {
+    font-size: 10pt;  
+    }
+  
+}
+
+/* tablet sizing */
+@media (min-width: 30em) and (max-width: 60em) {
+  h1 {
+    font-size: 24pt;  
+    }
+  
+  h2 {
+    font-size: 24pt;  
+    }
+  
+  h3 {
+    font-size: 18pt;  
+    }
+  
+  p {
+    font-size: 12pt;  
+    }
+  
+  li {
+    font-size: 12pt;  
+    }
+  
+  a {
+    font-size: 12pt;  
+    }
+}
